@@ -138,7 +138,7 @@ public class Simulation
                     faresCollected += car.getFares();
                     milesDriven += car.getMilesDriven();
                     cars.remove(i);
-                    System.out.printf("%s finishes at destination station %d. Miles: %d. Fare %f\n", car, car.getLocation(), car.getMilesDriven(), 1000 + (10000 - 1000) * this.generator.nextDouble());
+                    System.out.printf("%s finishes at destination station %d. Miles: %d. Fare %f\n", car, car.getLocation(), car.getMilesDriven(), (10 + (100 - 10) * this.generator.nextDouble())/car.getIdNo());
                 }
                 System.out.println();
             }
